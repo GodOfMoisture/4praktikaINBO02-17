@@ -16,7 +16,7 @@ int main()
 	do
 	{
 		int sizeOfArray = 0;
-		cout << "?acia? ianneaa: ";
+		cout << "Размерность массива: ";
 		cin >> sizeOfArray;
 
 		pArrForFill = giveMemoryToArr(pArrForFill, sizeOfArray);
@@ -24,7 +24,7 @@ int main()
 		showArr(pArrForFill, sizeOfArray);
 		pArrForFill = freeMemory(pArrForFill);
 
-		cout << "\nI?iaie?eou (1). Aueoe (0): ";
+		cout << "\Продолжить работу? да (1). нет (0): ";
 		cin >> userAnswer;
 	} while (userAnswer != '0');
 
